@@ -1,0 +1,22 @@
+class Country{
+    String name;
+}
+class State extends Country{
+    void data(){
+        System.out.println("Iam living in");
+    }}
+class District extends State{
+}
+
+class Main {
+    public static void main(String[] args) {
+        Country c=new Country();
+        State s=new State();
+        District d= new District();
+        c.name="India";
+        s.name="Telangana";
+        d.name="Nalgonda";
+        d.data();
+        System.out.println("country:"+c.name+"state:"+s.name+"district:"+d.name);
+    }
+}
