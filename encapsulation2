@@ -1,0 +1,21 @@
+class Bank{
+     private int acc;
+     private int balance=1000;
+      void getter(int amount,int acc){
+         balance +=amount;
+         this.acc=acc;
+     }
+      void setter(){
+         System.out.println("balance amount:"+balance);
+         System.out.println("account number:"+acc);
+     }
+ }
+ 
+class Main {
+    public static void main(String[] args) {
+        int a;
+         Bank b=new Bank();
+         b.getter(500,123);
+         b.setter();
+    }       
+}
