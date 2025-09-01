@@ -1,0 +1,18 @@
+class Student{
+    Student(){
+        System.out.println("default constructor");
+    }
+    Student(String name){
+        System.out.println("name:"+name);
+    }
+    Student(String name,String course){
+        System.out.println(name+"learning"+course);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+         Student std=new Student();
+         Student std1=new Student("thriveni");
+         Student std2=new Student("thriveni","java");
+    }
+}
