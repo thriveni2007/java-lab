@@ -1,0 +1,19 @@
+class Course{
+    String name;
+}
+class Student extends Course{
+    void data(){
+        System.out.print( " learning ");
+    }}
+
+class Main {
+    public static void main(String[] args) {
+        Course c=new Course();
+        Student s=new Student();
+        c.name="java";
+        s.name="Thriveni";
+        System.out.print(s.name);
+        s.data();
+        System.out.print(c.name);
+    }
+}
