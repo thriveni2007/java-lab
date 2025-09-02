@@ -1,0 +1,45 @@
+class Student1{
+
+	Student1(String name){
+
+		System.out.println("hello everyone my name is:"+name);
+
+	}
+
+	 } 
+
+class Course1 extends Student1{
+
+	Course1(String name) {
+
+		super("thriveni");
+
+		System.out.println(name+"learning java ");
+
+	}
+
+}
+
+class Subject1 extends Course1{
+
+	Subject1(String name) {
+
+		super("thriveni");
+
+		System.out.println("easy to learn java by"+name);
+
+	}
+
+}
+
+public class Keyword {
+
+	public static void main(String[] args) {
+
+		Subject1 std=new Subject1("thriveni");
+
+	}
+
+
+
+}
