@@ -1,0 +1,57 @@
+class Rbi{
+
+	public double getrateofint() {
+
+		return 5.0;
+
+	}
+
+}
+
+class Sbibank extends Rbi{
+
+	public double getrateofint() {
+
+		return 6.5;}
+
+}
+
+class Hdfc extends Rbi{
+
+	public double getrateofint() {
+
+		return 7.0;
+
+}}
+
+public class Inheritance { //overriding
+
+
+
+	public static void main(String[] args) {
+
+		 Rbi r=new Rbi();
+
+		 Sbibank s= new Sbibank();
+
+		 Hdfc h= new Hdfc();
+
+         double a=r.getrateofint();
+
+         double b =s.getrateofint();
+
+         double c=h.getrateofint();
+
+         System.out.println("rbi int:"+a);
+
+         System.out.println("sbi int"+b);
+
+         System.out.println("hdfc int"+c);
+
+         
+
+	}
+
+
+
+}
