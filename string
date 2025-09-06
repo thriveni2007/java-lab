@@ -1,0 +1,35 @@
+class Main {
+static void len(String name){
+    System.out.println("length of string:"+name.length());
+}
+ static  void upperlower(String name){
+    System.out.println("\nlowercase string:"+name.toLowerCase());
+    System.out.println("\nuppercase string:"+name.toUpperCase());
+}
+static void index(String name){
+    System.out.println("\nstring:"+name.indexOf("music"));
+}
+ static void concatenation(String name){
+    String info="to it";
+    System.out.println("\nstring:"+ name.concat(info));
+}
+static void operatorsum(){
+    String x="10";
+    String y="20";
+    System.out.println("\nstring:"+(x+y));
+}
+static void splcharacter(){
+    String name="hi \\everyone\\my \'name\' is \"thriveni\"";
+    System.out.println("splcharacters added string:"+name);
+}
+
+    public static void main(String[] args) {
+      String name="earth as music those who listen";
+      len(name);
+      upperlower(name);
+      index(name);
+      concatenation(name);
+      operatorsum();
+      splcharacter();
+    }
+}
