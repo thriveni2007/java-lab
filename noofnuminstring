@@ -1,0 +1,23 @@
+package com.sample;
+
+import java.util.Scanner;
+
+public class Finglarnuminstring {
+
+	public static void main(String[] args) {
+		int count=0;
+		Scanner sc=new Scanner(System.in);
+		String name=sc.nextLine();
+		for(int i=name.length()-1;i>=0;i--) {
+			char a=name.charAt(i);
+			if( Character.isDigit(a)) {
+				count++;
+				System.out.println("digit is found"+a);
+			}
+		}
+	if(count==0) {
+		System.out.println("digit is not found");
+	}
+	}
+
+}
