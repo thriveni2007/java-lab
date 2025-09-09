@@ -1,0 +1,15 @@
+package com.sample;
+import java.util.Scanner;
+public class Palindromestring {
+public static void main(String[] args) {
+	String count="";
+	Scanner sc=new Scanner(System.in);
+	String name=sc.next();
+	for(int i=name.length()-1;i>=0;i--) {
+	  char a=name.charAt(i);
+	  count=count+a;
+	 
+	}
+	System.out.print(count);
+}
+}
