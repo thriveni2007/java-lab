@@ -1,0 +1,28 @@
+package com.sample;
+import java.util.Scanner;
+public class EvenandOdd {
+ public static void main(String[] args) {
+	 int even=0,odd=0;
+	 Scanner sc =new Scanner(System.in);
+	 System.out.println("enter no of integers");
+	 int i=sc.nextInt();
+	 int[] arr=new int[i];
+	 System.out.println("enter value");
+	 for(int x=0;x<i;x++) {
+		  
+		 arr[x]=sc.nextInt();
+	 }
+ for(int x=0;x<i;x++) {
+	 if (arr[x]%2==0) {
+		 even++;
+	 }
+	 else {
+		 odd++;
+	 }
+ }
+ System.out.println("even numbers:"+even);
+ System.out.println("odd numbers:"+odd);
+ 
+ }
+ 
+}
