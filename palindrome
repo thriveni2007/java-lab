@@ -1,0 +1,18 @@
+package com.sample;
+import java.util.Scanner;
+public class Palindrome {
+
+	public static void main(String[] args) {
+		 Scanner sc= new  Scanner(System.in);
+		 int rem,num=0;
+		 System.out.println("enter number");
+		 int a=sc.nextInt();
+		 while(a>0) {
+			 rem=a%10;
+			 num=rem+num*10;
+			 a=a/10;
+			 
+		 }
+		 System.out.println(num);
+	}
+}
