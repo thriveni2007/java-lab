@@ -1,0 +1,36 @@
+class Vehicle {
+    Vehicle() {
+        System.out.println("Vehicle constructor");
+    }
+
+    void start() {
+        System.out.println("Vehicle started");
+    }
+}
+
+class Car extends Vehicle {
+    Car() {
+        System.out.println("Car constructor");
+    }
+
+    void start() {
+        System.out.println("Car started");
+    }
+}
+
+class ElectricCar extends Car {
+    ElectricCar() {
+        System.out.println("ElectricCar constructor");
+    }
+
+    void start() {
+        System.out.println("ElectricCar started");
+    }
+}
+
+ 
+class Main {
+    public static void main(String[] args) {
+        ElectricCar car=new ElectricCar();
+    }
+}
