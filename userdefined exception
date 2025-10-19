@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class CatchException extends Exception{
+    public CatchException(String Message){
+        super(Message);
+}}
+class Main {
+    public static void subclass() throws CatchException{
+        int age;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter age:");
+        age=sc.nextInt();
+        if(age<15){
+            throw new CatchException("age id not allowed to vote");
+        }
+    }
+    public static void main(String[] args) {
+         try{
+              subclass();
+        }
+         catch(CatchException c){
+             System.out.println(c.getMessage());
+         }
+         catch(ArithmeticException e){
+              System.out.print(e.getMessage());
+         }
+         catch(ArrayIndexOutOfBoundsException a){
+             System.out.print(a.toString());
+         }
+         finally{
+             System.out.println("blocks are executed");
+         }
+    }
+}
