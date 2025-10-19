@@ -1,0 +1,22 @@
+class Main {
+    class subclass{
+        subclass(){
+        int[] a={1,2,3,4};
+             System.out.print(a[5]);
+    }}
+    public static void main(String[] args) {
+         try{
+              Mian m=new Main();
+            subclass s=m.new subclass();
+         }
+         catch(ArithmeticException e){
+              System.out.print(e.getMessage());
+         }
+         catch(ArrayIndexOutOfBoundsException a){
+             System.out.print(a.toString());
+         }
+         finally{
+             System.out.print("blocks are executed");
+         }
+    }
+}
