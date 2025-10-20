@@ -1,0 +1,20 @@
+abstract class outer{
+   public abstract void display();
+   public int sum(){
+       System.out.println(5);
+    return 5; 
+   }
+}
+class Matth extends outer{
+    public   void display(){
+        System.out.println("Try programiz.pro");
+    
+    }}
+
+class Main {
+    public static void main(String[] args) {
+        outer o=new Matth();
+        o.display();
+        o.sum();
+    }
+}
