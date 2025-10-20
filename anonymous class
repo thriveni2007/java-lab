@@ -1,0 +1,19 @@
+class Outer{
+    void display(){
+         System.out.println("this is the outer class.");
+    }
+}
+class Inner{
+        static Outer o=new Outer();
+         void display(){
+            o.display();
+            System.out.println("this is the inner class.");
+}
+    } 
+
+class Main {
+    public static void main(String[] args) {
+           Inner i =new Inner();
+           i.display();
+    }
+}
