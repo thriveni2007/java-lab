@@ -1,0 +1,14 @@
+class Outer{
+    class Inner{
+        void display(){
+            System.out.println("this is the inner class.");
+        }
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        //Outer 0=new Outer();
+        Outer.Inner i= new Outer().new Inner();
+        i.display();
+    }
+}
