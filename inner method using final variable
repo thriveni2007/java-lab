@@ -1,0 +1,18 @@
+class Outer{
+    void outermethod(){
+    final int a=70;
+    class Inner{
+        void display(){
+            System.out.println("this is the inner class."+a);
+}
+    }
+        Inner i=new Inner();
+        i.display();
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Outer o =new Outer();
+        o.outermethod();
+    }
+}
