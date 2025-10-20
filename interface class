@@ -1,0 +1,22 @@
+ interface   outer{
+   public abstract void display();
+   public int sum();
+}
+class Matth implements outer{
+    public   void display(){
+        System.out.println("Try programiz.pro");
+    
+    }
+      public int sum(){
+       System.out.println(5);
+    return 5; 
+   }
+}
+
+class Main {
+    public static void main(String[] args) {
+        outer o=new Matth();
+        o.display();
+        o.sum();
+    }
+}
