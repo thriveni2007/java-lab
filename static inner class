@@ -1,0 +1,13 @@
+class Outer{
+    static int a=70;
+    static class Inner{
+        static void display(){
+            System.out.println("this is the inner class."+a);
+}
+    } 
+}
+class Main {
+    public static void main(String[] args) {
+         Outer.Inner.display();
+    }
+}
